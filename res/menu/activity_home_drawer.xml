@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_inventory_tag" android:title="@string/menu_inventory_6c" />
+        <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_access_tag" android:title="@string/access_tag" />
+        <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_find_tag" android:title="@string/find_tag" />
+        <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_select_tag" android:title="@string/select_tag" />
+        <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_temp_tag1" android:title="@string/read_temp_tag1" />
+        <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_temp_tag2" android:title="@string/read_temp_tag2" />
+    </group>
+    <item android:title="@string/set_basic_param">
+        <menu>
+            <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_baud_rate" android:title="@string/nav_baud_rate" />
+            <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_reader_address" android:title="@string/menu_reader_rs_485_hex" />
+            <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_reader_identify" android:title="@string/menu_reader_identify" />
+            <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_reader_version" android:title="@string/menu_reader_version" />
+            <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_reader_status" android:title="@string/menu_reader_status" />
+            <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_reader_temperature" android:title="@string/menu_reader_temperature" />
+            <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_reader_gpio" android:title="@string/menu_reader_gpio" />
+            <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_ble_module" android:title="@string/menu_ble_module" />
+            <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_reader_beeper" android:title="@string/menu_reader_beeper" />
+        </menu>
+    </item>
+    <item android:title="@string/set_rf_param">
+        <menu>
+            <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_rf_power" android:title="@string/menu_rf_output_power" />
+            <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_switch_ant" android:title="@string/menu_switch_ant" />
+            <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_return_loss" android:title="@string/menu_return_loss" />
+            <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_ant_sensitivity" android:title="@string/menu_ant_sensitivity" />
+            <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_rf_spectrum" android:title="@string/menu_rf_spectrum" />
+            <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_rf_com_link" android:title="@string/menu_rf_com_link" />
+            <item android:icon="@drawable/ic_developer_board_black_24dp" android:id="@id/nav_rf_q" android:title="Q" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/when_set_ok_will_close" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/rg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <RadioButton android:id="@id/rb921600" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="_921600" android:layout_weight="1.0" />
+        <RadioButton android:id="@id/rb115200" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="_115200" android:layout_weight="1.0" />
+        <RadioButton android:id="@id/rb38400" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="_38400" android:layout_weight="1.0" />
+    </RadioGroup>
+    <Button android:id="@id/btnSet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/set" />
+</LinearLayout>

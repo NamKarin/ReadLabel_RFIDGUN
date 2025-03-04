@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/mobile_navigation" app:startDestination="@id/nav_inventory_tag"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="@string/menu_inventory_6c" android:name="com.naz.label.ui.home.inventory.InventoryTagFragment" android:id="@id/nav_inventory_tag">
+        <action android:id="@id/action_InventoryTagFragment_to_FindTagFragment" app:destination="@id/nav_find_tag" />
+        <action android:id="@id/action_InventoryTagFragment_to_AccessTagFragment" app:destination="@id/nav_access_tag" />
+    </fragment>
+    <fragment android:label="@string/access_tag" android:name="com.naz.label.ui.home.access.AccessTagFragment" android:id="@id/nav_access_tag" />
+    <fragment android:label="@string/find_tag" android:name="com.naz.label.ui.home.find.FindTagFragment" android:id="@id/nav_find_tag" />
+    <fragment android:label="@string/select_tag" android:name="com.naz.label.ui.home.select.SelectTagFragment" android:id="@id/nav_select_tag" />
+    <fragment android:label="@string/read_temp_tag1" android:name="com.naz.label.ui.home.johar.TempTag1Fragment" android:id="@id/nav_temp_tag1" />
+    <fragment android:label="@string/read_temp_tag2" android:name="com.naz.label.ui.home.temp.TempTag2Fragment" android:id="@id/nav_temp_tag2" />
+    <fragment android:label="@string/nav_baud_rate" android:name="com.naz.label.ui.set.baud_rate.BaudRateFragment" android:id="@id/nav_baud_rate" />
+    <fragment android:label="@string/menu_reader_rs_485_hex" android:name="com.naz.label.ui.set.address.ReaderAddressFragment" android:id="@id/nav_reader_address" />
+    <fragment android:label="@string/menu_reader_identify" android:name="com.naz.label.ui.set.identify.ReaderIdentifyFragment" android:id="@id/nav_reader_identify" />
+    <fragment android:label="@string/menu_reader_version" android:name="com.naz.label.ui.set.version.ReaderVersionFragment" android:id="@id/nav_reader_version" />
+    <fragment android:label="@string/menu_reader_status" android:name="com.naz.label.ui.set.status.ReaderStatusFragment" android:id="@id/nav_reader_status" />
+    <fragment android:label="@string/menu_reader_temperature" android:name="com.naz.label.ui.set.temperature.ReaderTemperatureFragment" android:id="@id/nav_reader_temperature" />
+    <fragment android:label="@string/menu_reader_gpio" android:name="com.naz.label.ui.set.gpio.ReaderGpioFragment" android:id="@id/nav_reader_gpio" />
+    <fragment android:label="@string/menu_ble_module" android:name="com.naz.label.ui.set.ble.ReaderBleFragment" android:id="@id/nav_ble_module" />
+    <fragment android:label="@string/menu_reader_beeper" android:name="com.naz.label.ui.set.beeper.ReaderBeeperFragment" android:id="@id/nav_reader_beeper" />
+    <fragment android:label="@string/menu_rf_output_power" android:name="com.naz.label.ui.set.power.ReaderPowerFragment" android:id="@id/nav_rf_power" />
+    <fragment android:label="@string/menu_switch_ant" android:name="com.naz.label.ui.set.ant.ReaderAntennaFragment" android:id="@id/nav_switch_ant" />
+    <fragment android:label="@string/menu_return_loss" android:name="com.naz.label.ui.set.loss.ReaderReturnLossFragment" android:id="@id/nav_return_loss" />
+    <fragment android:label="@string/menu_ant_sensitivity" android:name="com.naz.label.ui.set.sensitivity.ReaderAntSensitivityFragment" android:id="@id/nav_ant_sensitivity" />
+    <fragment android:label="@string/menu_rf_spectrum" android:name="com.naz.label.ui.set.region.ReaderRegionFragment" android:id="@id/nav_rf_spectrum" />
+    <fragment android:label="@string/menu_rf_com_link" android:name="com.naz.label.ui.set.profile.ReaderProfileFragment" android:id="@id/nav_rf_com_link" />
+    <fragment android:label="Q" android:name="com.naz.label.ui.set.q.QFragment" android:id="@id/nav_rf_q" />
+</navigation>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:id="@id/tv_rl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginStart="10.0dip" />
+        <Spinner android:entries="@array/return_loss_list" android:id="@id/spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginStart="90.0dip" android:layout_marginEnd="50.0dip" />
+        <TextView android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="MHz" android:layout_marginEnd="10.0dip" />
+        <Button android:id="@id/btn_get" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:layout_marginBottom="5.0dip" android:text="@string/measure" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

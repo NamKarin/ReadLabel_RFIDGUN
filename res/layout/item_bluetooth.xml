@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/parent" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_signal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" android:layout_marginStart="15.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/light_blue" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20.0dip" app:layout_constraintBottom_toTopOf="@id/tv_address" app:layout_constraintLeft_toRightOf="@id/iv_signal" app:layout_constraintTop_toTopOf="@id/iv_signal" />
+    <TextView android:textSize="13.0sp" android:textColor="@color/light_blue" android:id="@id/tv_address" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@id/iv_signal" app:layout_constraintLeft_toLeftOf="@id/tv_name" app:layout_constraintTop_toBottomOf="@id/tv_name" />
+    <View android:background="#ff999999" android:layout_width="fill_parent" android:layout_height="1.0px" app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

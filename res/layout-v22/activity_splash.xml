@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.AppCompatButton android:id="@id/btn_serial_port" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="30.0dip" android:layout_marginRight="@dimen/dp_10" android:text="@string/serial_connection" android:layout_marginHorizontal="@dimen/dp_10" />
+    <androidx.appcompat.widget.AppCompatButton android:id="@id/btnNet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dp_10" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/dp_10" android:text="@string/net_connection" android:layout_marginHorizontal="@dimen/dp_10" />
+    <androidx.appcompat.widget.AppCompatButton android:id="@id/btn_ble" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10" android:text="@string/ble_connection" />
+    <androidx.appcompat.widget.AppCompatButton android:id="@id/btn_usb" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10" android:text="@string/otg_connection" />
+    <androidx.appcompat.widget.AppCompatButton android:id="@id/btn_printer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10" android:text="@string/printer_connection" />
+    <androidx.appcompat.widget.AppCompatButton android:id="@id/btnLog" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/dp_10" android:text="@string/operation_log" />
+</LinearLayout>

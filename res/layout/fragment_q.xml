@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" app:layout_constraintTop_toTopOf="parent">
+        <RadioGroup android:orientation="horizontal" android:id="@id/rgQ" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioButton android:id="@id/rb_fixed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fixed" />
+            <RadioButton android:id="@id/rb_dynamic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dynamic" />
+        </RadioGroup>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginStart="10.0dip">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <EditText android:id="@id/etValue" android:nextFocusDown="@id/etMin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/value" android:singleLine="true" android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <EditText android:id="@id/etMin" android:nextFocusDown="@id/etMax" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/min" android:singleLine="true" android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <EditText android:id="@id/etMax" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/max" android:singleLine="true" android:inputType="number" android:imeOptions="actionDone" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/llDynamic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:layout_marginStart="10.0dip">
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <EditText android:id="@id/etNumMinQCycles" android:nextFocusDown="@id/etMaxQuerySinceEPC" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1" android:hint="@string/num_min_q_cycles" android:singleLine="true" android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <EditText android:id="@id/etMaxQuerySinceEPC" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0" android:hint="@string/max_query_since_epc" android:singleLine="true" android:inputType="number" android:imeOptions="actionDone" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <Button android:id="@id/btn_get" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="168.0dip" android:layout_marginBottom="5.0dip" android:text="@string/read" android:layout_marginStart="10.0dip" />
+        <Button android:layout_gravity="end|bottom|center" android:id="@id/btn_set" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/set" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

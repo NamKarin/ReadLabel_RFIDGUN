@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/gray_2" android:id="@id/tv_fast_ant_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="A:" android:layout_centerVertical="true" android:layout_marginStart="5.0dip" />
+    <org.angmarch.views.NiceSpinner android:id="@id/sp_fast_ant" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="5.0dip" android:layout_toEndOf="@id/tv_fast_ant_tip" app:entries="@array/four_channel" />
+    <TextView android:textColor="@color/gray_2" android:id="@id/tv_fast_ant_times_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cycles_prompt" android:layout_centerInParent="true" />
+    <EditText android:id="@id/et_fast_ant_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1" android:maxLength="3" android:layout_centerVertical="true" android:inputType="number" android:imeOptions="actionNext" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" android:layout_toEndOf="@id/tv_fast_ant_times_tip" />
+</RelativeLayout>

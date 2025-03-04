@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/menu_power" android:orderInCategory="100" app:showAsAction="ifRoom" />
+    <item android:id="@id/menu_reset" android:orderInCategory="100" android:title="@string/reset_reader" app:showAsAction="never" />
+    <item android:id="@id/menu_monitor" android:orderInCategory="100" android:title="@string/data_monitor" app:showAsAction="never" />
+    <item android:id="@id/menu_language_switch" android:orderInCategory="100" android:title="@string/language_switch" app:showAsAction="never" />
+    <item android:id="@id/menu_export_excel" android:orderInCategory="100" android:title="@string/export_excel" app:showAsAction="never" />
+    <item android:id="@id/menu_setting" android:orderInCategory="100" android:title="@string/set" app:showAsAction="never" />
+    <item android:id="@id/menu_about" android:orderInCategory="100" android:title="@string/about" app:showAsAction="never" />
+</menu>

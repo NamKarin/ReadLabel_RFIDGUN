@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rlt_item" android:background="@drawable/select_item_file" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/fileIcon" android:layout_width="38.0dip" android:layout_height="38.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="8.0dip" />
+        <ImageView android:id="@id/fileChoose" android:padding="9.0dip" android:layout_width="55.0dip" android:layout_height="40.0dip" android:src="@drawable/log_choose_checkbox_off" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/fileChoose" android:layout_toRightOf="@id/fileIcon" android:layout_centerVertical="true">
+            <TextView android:textSize="14.0sp" android:textColor="#ff333333" android:ellipsize="middle" android:id="@id/fileName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="fasdfafda" android:singleLine="true" />
+            <TextView android:textSize="10.0sp" android:textColor="#ff666666" android:id="@id/fileTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="10.0dip" android:text="adfadfadfa" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/divider" android:background="@color/greyLight" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

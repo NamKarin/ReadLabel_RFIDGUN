@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_prompt1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/read_gpio1_and_2" android:layout_marginStart="10.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.cardview.widget.CardView android:id="@id/cv1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" app:layout_constraintTop_toBottomOf="@id/tv_prompt1">
+        <RadioGroup android:orientation="horizontal" android:id="@id/radio_group_gpio1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dip">
+            <RadioButton android:id="@id/rb_high_gpio1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/high" />
+            <RadioButton android:id="@id/rb_low_gpio1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/low" android:layout_marginStart="20.0dip" />
+        </RadioGroup>
+        <RadioGroup android:orientation="horizontal" android:id="@id/radio_group_gpio2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_marginStart="10.0dip">
+            <RadioButton android:id="@id/rb_high_gpio2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/high" />
+            <RadioButton android:id="@id/rb_low_gpio2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/low" android:layout_marginStart="20.0dip" />
+        </RadioGroup>
+        <Button android:id="@id/btn_get" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="90.0dip" android:layout_marginBottom="5.0dip" android:text="@string/read" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+    </androidx.cardview.widget.CardView>
+    <TextView android:id="@id/tv_prompt2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:text="@string/set_gpio3" android:layout_marginStart="10.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/cv1" />
+    <androidx.cardview.widget.CardView android:id="@id/cv2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" app:layout_constraintTop_toBottomOf="@id/tv_prompt2">
+        <RadioGroup android:orientation="horizontal" android:id="@id/radio_group_gpio3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dip">
+            <RadioButton android:id="@id/rb_high_gpio3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/high" />
+            <RadioButton android:id="@id/rb_low_gpio3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/low" android:layout_marginStart="20.0dip" />
+        </RadioGroup>
+        <Button android:id="@id/btn_set_gpio3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="5.0dip" android:text="@string/set" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+    </androidx.cardview.widget.CardView>
+    <TextView android:id="@id/tv_prompt3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:text="@string/set_gpio4" android:layout_marginStart="10.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/cv2" />
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" app:layout_constraintTop_toBottomOf="@id/tv_prompt3">
+        <RadioGroup android:orientation="horizontal" android:id="@id/radio_group_gpio4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dip">
+            <RadioButton android:id="@id/rb_high_gpio4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/high" />
+            <RadioButton android:id="@id/rb_low_gpio4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/low" android:layout_marginStart="20.0dip" />
+        </RadioGroup>
+        <Button android:id="@id/btn_set_gpio4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="5.0dip" android:text="@string/set" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

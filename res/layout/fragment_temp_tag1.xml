@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/cl_parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RadioGroup android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <CheckBox android:gravity="center" android:id="@id/cbYH" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="true" android:text="@string/tag_yh" />
+        <CheckBox android:gravity="center" android:id="@id/cbXY" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/tag_xy" />
+        <Button android:textColor="@color/color_text_selector" android:id="@id/btn_read_tag" android:background="@drawable/color_bg_selector" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/start_read_tag" android:layout_weight="1.0" />
+        <Button android:textColor="@color/color_text_selector" android:id="@id/btnClear" android:background="@drawable/color_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/refresh_data" />
+    </RadioGroup>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText android:id="@id/etEpc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxHeight="256.0dip" android:hint="EPC" android:singleLine="true" android:inputType="textAutoCorrect|textCapCharacters" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.cardview.widget.CardView android:id="@id/cv_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/card_view_count">
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/gray_3" android:gravity="center" android:id="@id/tv_filter_id" android:layout_width="30.0dip" android:layout_height="30.0dip" android:text="@string/id" />
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/gray_3" android:gravity="center" android:id="@id/tv_temperature" android:layout_width="60.0dip" android:layout_height="30.0dip" android:text="@string/temperature" />
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/gray_3" android:gravity="center" android:id="@id/tv_ant_id" android:layout_width="40.0dip" android:layout_height="30.0dip" android:text="@string/antenna_number" />
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/gray_3" android:gravity="center" android:id="@id/tv_filter_action" android:layout_width="40.0dip" android:layout_height="30.0dip" android:text="@string/times" />
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/gray_3" android:gravity="center" android:id="@id/tv_filter_length" android:layout_width="60.0dip" android:layout_height="30.0dip" android:text="@string/pc" />
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/gray_3" android:gravity="center" android:id="@id/tv_crc" android:layout_width="60.0dip" android:layout_height="30.0dip" android:text="@string/crc" />
+                    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/gray_3" android:gravity="center" android:id="@id/tv_filter_session" android:layout_width="60.0dip" android:layout_height="30.0dip" android:text="@string/epc" />
+                    <View android:id="@id/v_line" android:background="@color/gray_3" android:layout_width="0.0dip" android:layout_height="1.0px" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_filter_id" />
+                </LinearLayout>
+                <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

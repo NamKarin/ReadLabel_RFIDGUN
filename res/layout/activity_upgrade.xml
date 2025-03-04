@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_select_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="升级类型" android:layout_marginStart="15.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/rg_upgrade_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" app:layout_constraintStart_toStartOf="@id/tv_select_type" app:layout_constraintTop_toBottomOf="@id/tv_select_type">
+        <RadioButton android:id="@id/rb_boot_loader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BootLoader" />
+        <RadioButton android:id="@id/rb_firmware" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Firmware" android:layout_marginStart="5.0dip" />
+    </RadioGroup>
+    <TextView android:id="@id/tv_select_file" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="升级文件" app:layout_constraintStart_toStartOf="@id/tv_select_type" app:layout_constraintTop_toBottomOf="@id/rg_upgrade_type" />
+    <EditText android:id="@id/et_file" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="5.0dip" app:layout_constraintEnd_toStartOf="@id/btn_select_file" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_select_file" />
+    <Button android:id="@id/btn_select_file" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="选择文件" android:layout_marginEnd="15.0dip" app:layout_constraintBottom_toBottomOf="@id/et_file" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/et_file" />
+    <Button android:textColor="@color/color_text_selector" android:id="@id/btn_upgrade" android:background="@drawable/color_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="开始升级" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" app:layout_constraintTop_toBottomOf="@id/et_file" />
+</androidx.constraintlayout.widget.ConstraintLayout>

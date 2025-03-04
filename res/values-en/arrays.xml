@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="access_area">
+        <item>Pwd</item>
+        <item>EPC</item>
+        <item>TID</item>
+        <item>USER</item>
+    </string-array>
+    <string-array name="access_sub_area">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="antenna_counts">
+        <item>1 antenna</item>
+        <item>4 antenna</item>
+        <item>8 antenna</item>
+        <item>16 antenna</item>
+    </string-array>
+    <string-array name="antenna_list">
+        <item>Antenna 1</item>
+        <item>Antenna 2</item>
+        <item>Antenna 3</item>
+        <item>Antenna 4</item>
+    </string-array>
+    <string-array name="eight_channel">
+        <item>NONE</item>
+        <item>ANT1</item>
+        <item>ANT2</item>
+        <item>ANT3</item>
+        <item>ANT4</item>
+        <item>ANT5</item>
+        <item>ANT6</item>
+        <item>ANT7</item>
+        <item>ANT8</item>
+    </string-array>
+    <string-array name="four_channel">
+        <item>NONE</item>
+        <item>ANT1</item>
+        <item>ANT2</item>
+        <item>ANT3</item>
+        <item>ANT4</item>
+    </string-array>
+    <string-array name="high_eight_channel">
+        <item>NONE</item>
+        <item>ANT9</item>
+        <item>ANT10</item>
+        <item>ANT11</item>
+        <item>ANT12</item>
+        <item>ANT13</item>
+        <item>ANT14</item>
+        <item>ANT15</item>
+        <item>ANT16</item>
+    </string-array>
+    <string-array name="lock_area">
+        <item>"  USER  "</item>
+        <item>"  TID  "</item>
+        <item>"  EPC  "</item>
+        <item>Access pwd</item>
+        <item>destroy pwd</item>
+    </string-array>
+    <string-array name="lock_limit">
+        <item>"   Open   "</item>
+        <item>"   Lock   "</item>
+        <item>Open forever</item>
+        <item>Lock forever</item>
+        <item>R6 lock forever</item>
+    </string-array>
+    <string-array name="temp_tag2_led">
+        <item>Turn on</item>
+        <item>Turn off</item>
+    </string-array>
+    <string-array name="temp_tag2_meas_type">
+        <item>Measure temperature</item>
+        <item>Measure battery voltage</item>
+        <item>Meas external temp sensor volt</item>
+        <item>Meas external pressure sensor volt</item>
+    </string-array>
+    <string-array name="temp_tag2_opt_type">
+        <item>Single measurement</item>
+        <item>Turn on RTC meas temp</item>
+        <item>Stop RTC meas temp</item>
+        <item>Load configuration</item>
+        <item>Read register</item>
+        <item>Status query</item>
+        <item>Authenticate</item>
+        <item>Read memory</item>
+        <item>Write memory</item>
+        <item>LED control</item>
+    </string-array>
+</resources>

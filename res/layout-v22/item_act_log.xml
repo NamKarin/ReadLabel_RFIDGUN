@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/gray_2" android:id="@id/tvTitle" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingVertical="10.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="@android:color/holo_red_light" android:gravity="center_vertical" android:layout_gravity="end|center" android:id="@id/btnItemDelLog" android:background="@drawable/thumb" android:paddingLeft="15.0dip" android:paddingTop="6.0dip" android:paddingRight="15.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="删除" android:layout_marginHorizontal="5.0dip" android:paddingHorizontal="15.0dip" android:paddingVertical="6.0dip" />
+</FrameLayout>

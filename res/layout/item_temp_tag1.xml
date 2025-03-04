@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/cl_parent" android:layout_width="fill_parent" android:layout_height="35.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/gray_3" android:gravity="center" android:id="@id/tv_filter_id" android:layout_width="30.0dip" android:layout_height="fill_parent" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/gray_3" android:gravity="center" android:id="@id/tv_temperature" android:layout_width="60.0dip" android:layout_height="fill_parent" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/gray_4" android:gravity="center" android:id="@id/tv_ant_id" android:layout_width="40.0dip" android:layout_height="fill_parent" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/gray_4" android:gravity="center" android:id="@id/tv_filter_action" android:layout_width="40.0dip" android:layout_height="fill_parent" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/gray_3" android:gravity="center" android:id="@id/tv_filter_length" android:layout_width="60.0dip" android:layout_height="fill_parent" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/gray_3" android:gravity="center" android:id="@id/tv_crc" android:layout_width="60.0dip" android:layout_height="fill_parent" />
+    <TextView android:textSize="12.0sp" android:textStyle="bold" android:textColor="@color/gray_3" android:gravity="center" android:id="@id/tv_filter_session" android:layout_width="60.0dip" android:layout_height="fill_parent" />
+    <View android:id="@id/v_line" android:background="@color/gray_3" android:layout_width="fill_parent" android:layout_height="1.0px" />
+</LinearLayout>

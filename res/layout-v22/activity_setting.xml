@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.SwitchCompat android:layout_gravity="center" android:id="@id/sbEnableLog" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/set_operation_log" android:layout_marginHorizontal="15.0dip" />
+    <View android:background="@drawable/line_bot" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <androidx.appcompat.widget.SwitchCompat android:id="@id/sbSaveInventoryLog" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/save_log" android:layout_marginHorizontal="15.0dip" />
+    <View android:background="@drawable/line_bot" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginHorizontal="15.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/tv_minimum_bee_time" android:layout_width="0.0px" android:layout_height="45.0dip" android:text="@string/beep_interval" android:layout_weight="1.0" />
+        <EditText android:id="@id/et_beep_interval" android:layout_width="100.0dip" android:layout_height="wrap_content" android:maxLength="4" android:inputType="number" android:importantForAutofill="no" />
+    </LinearLayout>
+    <View android:id="@id/v_minimum_bee_time" android:background="@drawable/line_bot" android:layout_width="fill_parent" android:layout_height="1.0dip" app:layout_constraintTop_toBottomOf="@id/tv_minimum_bee_time" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginHorizontal="15.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/tv_cmd_timeout" android:layout_width="0.0px" android:layout_height="45.0dip" android:text="@string/cmd_timeout" android:layout_weight="1.0" />
+        <EditText android:id="@id/et_cmd_timeout" android:layout_width="100.0dip" android:layout_height="wrap_content" android:maxLength="4" android:inputType="number" android:importantForAutofill="no" />
+    </LinearLayout>
+    <View android:background="@drawable/line_bot" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <androidx.appcompat.widget.SwitchCompat android:id="@id/sb_epc_length_change" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="@string/epc_length_change" android:layout_marginHorizontal="15.0dip" />
+    <View android:background="@drawable/line_bot" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:id="@id/llBattery" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginHorizontal="15.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/tvBatteryLevel" android:layout_width="0.0px" android:layout_height="45.0dip" android:text="低于10%电量，功率自动降至：" android:layout_weight="1.0" />
+        <EditText android:id="@id/etBatteryLevel" android:layout_width="100.0dip" android:layout_height="wrap_content" android:text="28" android:maxLength="4" android:inputType="number" android:importantForAutofill="no" app:layout_constraintBottom_toBottomOf="@id/tvBatteryLevel" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="@id/tvBatteryLevel" />
+    </LinearLayout>
+    <View android:background="@drawable/line_bot" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <androidx.appcompat.widget.SwitchCompat android:id="@id/sbTestTemp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="温升测试" android:layout_marginHorizontal="15.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <androidx.appcompat.widget.SwitchCompat android:id="@id/scAsync" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:text="队列方案，尝试接收更多的数据(测试.)" android:layout_marginHorizontal="15.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</LinearLayout>

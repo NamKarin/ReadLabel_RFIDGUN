@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="access_area">
+        <item>密码区</item>
+        <item>EPC区</item>
+        <item>TID区</item>
+        <item>USER区</item>
+    </string-array>
+    <string-array name="access_sub_area">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="antenna_counts">
+        <item>1天线</item>
+        <item>4天线</item>
+        <item>8天线</item>
+        <item>16天线</item>
+    </string-array>
+    <string-array name="antenna_list">
+        <item>天线 1</item>
+        <item>天线 2</item>
+        <item>天线 3</item>
+        <item>天线 4</item>
+    </string-array>
+    <string-array name="eight_channel">
+        <item>NONE</item>
+        <item>天线1</item>
+        <item>天线2</item>
+        <item>天线3</item>
+        <item>天线4</item>
+        <item>天线5</item>
+        <item>天线6</item>
+        <item>天线7</item>
+        <item>天线8</item>
+    </string-array>
+    <string-array name="fast_antenna_list">
+        <item>天线 1</item>
+        <item>天线 2</item>
+        <item>天线 3</item>
+        <item>天线 4</item>
+        <item>不选</item>
+    </string-array>
+    <string-array name="four_channel">
+        <item>NONE</item>
+        <item>天线1</item>
+        <item>天线2</item>
+        <item>天线3</item>
+        <item>天线4</item>
+    </string-array>
+    <string-array name="high_eight_channel">
+        <item>NONE</item>
+        <item>天线9</item>
+        <item>天线10</item>
+        <item>天线11</item>
+        <item>天线12</item>
+        <item>天线13</item>
+        <item>天线14</item>
+        <item>天线15</item>
+        <item>天线16</item>
+    </string-array>
+    <string-array name="inventoried_flag_list">
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+    <string-array name="lock_area">
+        <item>" USER区 "</item>
+        <item>" TID区 "</item>
+        <item>" EPC区 "</item>
+        <item>访问密码区</item>
+        <item>销毁密码区</item>
+    </string-array>
+    <string-array name="lock_limit">
+        <item>" 开放 "</item>
+        <item>" 锁定 "</item>
+        <item>永久开放</item>
+        <item>永久锁定</item>
+        <item>R6永久锁定</item>
+    </string-array>
+    <string-array name="mask_action">
+        <item>00</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+    </string-array>
+    <string-array name="mask_clear_no">
+        <item>Mask All</item>
+        <item>Mask No.1</item>
+        <item>Mask No.2</item>
+        <item>Mask No.3</item>
+        <item>Mask No.4</item>
+        <item>Mask No.5</item>
+    </string-array>
+    <string-array name="mask_membank">
+        <item>Reserve</item>
+        <item>EPC</item>
+        <item>TID</item>
+        <item>USER</item>
+    </string-array>
+    <string-array name="mask_no">
+        <item>Mask No.1</item>
+        <item>Mask No.2</item>
+        <item>Mask No.3</item>
+        <item>Mask No.4</item>
+        <item>Mask No.5</item>
+    </string-array>
+    <string-array name="mask_target">
+        <item>S0</item>
+        <item>S1</item>
+        <item>S2</item>
+        <item>S3</item>
+        <item>SL</item>
+    </string-array>
+    <string-array name="read_mode">
+        <item>Mode 1</item>
+        <item>Mode 2</item>
+        <item>Mode 3</item>
+        <item>Mode 20</item>
+    </string-array>
+    <string-array name="return_loss_list">
+        <item>865.00</item>
+        <item>865.50</item>
+        <item>866.00</item>
+        <item>866.50</item>
+        <item>867.00</item>
+        <item>867.50</item>
+        <item>868.00</item>
+        <item>902.00</item>
+        <item>902.50</item>
+        <item>903.00</item>
+        <item>903.50</item>
+        <item>904.00</item>
+        <item>904.50</item>
+        <item>905.00</item>
+        <item>905.50</item>
+        <item>906.00</item>
+        <item>906.50</item>
+        <item>907.00</item>
+        <item>907.50</item>
+        <item>908.00</item>
+        <item>908.50</item>
+        <item>909.00</item>
+        <item>909.50</item>
+        <item>910.00</item>
+        <item>910.50</item>
+        <item>911.00</item>
+        <item>911.50</item>
+        <item>912.00</item>
+        <item>912.50</item>
+        <item>913.00</item>
+        <item>913.50</item>
+        <item>914.00</item>
+        <item>914.50</item>
+        <item>915.00</item>
+        <item>915.50</item>
+        <item>916.00</item>
+        <item>916.50</item>
+        <item>917.00</item>
+        <item>917.50</item>
+        <item>918.00</item>
+        <item>918.50</item>
+        <item>919.00</item>
+        <item>919.50</item>
+        <item>920.00</item>
+        <item>920.50</item>
+        <item>921.00</item>
+        <item>921.50</item>
+        <item>922.00</item>
+        <item>922.50</item>
+        <item>923.00</item>
+        <item>923.50</item>
+        <item>924.00</item>
+        <item>924.50</item>
+        <item>925.00</item>
+        <item>925.50</item>
+        <item>926.00</item>
+        <item>926.50</item>
+        <item>927.00</item>
+        <item>927.50</item>
+        <item>928.00</item>
+    </string-array>
+    <string-array name="session_id_list">
+        <item>S0</item>
+        <item>S1</item>
+        <item>S2</item>
+        <item>S3</item>
+    </string-array>
+    <string-array name="temp_tag2_led">
+        <item>开启</item>
+        <item>关闭</item>
+    </string-array>
+    <string-array name="temp_tag2_meas_type">
+        <item>测量温度</item>
+        <item>测量电池电压</item>
+        <item>测外部温度传感电压</item>
+        <item>测外部压力传感电压</item>
+    </string-array>
+    <string-array name="temp_tag2_opt_type">
+        <item>单次测量</item>
+        <item>开启RTC测温</item>
+        <item>停止RTC测温</item>
+        <item>加载配置</item>
+        <item>读寄存器</item>
+        <item>状态查询</item>
+        <item>认证</item>
+        <item>读内存</item>
+        <item>写内存</item>
+        <item>LED控制</item>
+    </string-array>
+</resources>

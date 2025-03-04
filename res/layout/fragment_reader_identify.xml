@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/cl_parent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/cv_get" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:enabled="false" android:textSize="18.0sp" android:gravity="center" android:id="@id/tv_get_identify" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="00 00 00 00 00 00 00 00 00 00 00 00" />
+        <Button android:id="@id/btn_get" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="5.0dip" android:text="@string/read" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" app:layout_constraintTop_toBottomOf="@id/cv_get">
+        <EditText android:id="@id/et_set_identify" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:maxLength="24" android:digits="0123456789abcdefABCDEF" android:inputType="textCapCharacters" />
+        <Button android:enabled="false" android:id="@id/btn_set" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:layout_marginBottom="5.0dip" android:text="@string/set" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

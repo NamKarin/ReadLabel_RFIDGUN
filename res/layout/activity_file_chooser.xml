@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/bg_title" android:background="@color/themeColor" android:layout_width="fill_parent" android:layout_height="@dimen/actionBarHeight">
+        <ImageView android:id="@id/back" android:layout_width="@dimen/backPressIconSize" android:layout_height="@dimen/backPressIconSize" android:layout_marginLeft="@dimen/iconMargin" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/iconMargin" android:layout_alignParentStart="true" />
+        <TextView android:textSize="@dimen/titleTextSize" android:textColor="@color/white" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/rightText" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginRight="@dimen/iconMargin" android:text="完成" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/iconMargin" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/switchSdcard" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="12.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentTop="true" app:srcCompat="@drawable/disk" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/currentPath" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginRight="12.0dip" android:layout_toRightOf="@id/switchSdcard" android:layout_alignParentTop="true" />
+        <View android:id="@id/headerDivider" android:background="@color/greyLight" android:layout_width="fill_parent" android:layout_height="2.0px" android:layout_below="@id/switchSdcard" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/fileRv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/headerDivider" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:id="@id/tvSpace" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <CheckBox android:textSize="@dimen/dp_10" android:id="@id/log" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="log" />
+        <CheckBox android:textSize="@dimen/dp_10" android:id="@id/sdkLog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sdk" />
+        <CheckBox android:textSize="@dimen/dp_10" android:id="@id/saveLog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="save" />
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView android:scrollbarStyle="insideOverlay" android:id="@id/lvLog" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" app:fastScrollEnabled="false" />
+    <ScrollView android:scrollbarSize="@dimen/dp_10" android:scrollbarStyle="outsideOverlay" android:id="@id/llText" android:background="@color/white" android:visibility="gone" android:scrollbars="vertical" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textColor="#ff333333" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+        </HorizontalScrollView>
+    </ScrollView>
+    <ProgressBar android:layout_gravity="center" android:id="@id/pbWait" android:padding="150.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>
